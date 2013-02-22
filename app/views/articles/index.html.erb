@@ -1,0 +1,57 @@
+
+<ul id="rightnav">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<%= image_tag("bg.jpg", :alt => "rakesh") %>
+
+<h3>
+<body>
+<div id="topbar">
+<ul id="topnav">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+  <a href="/articles/about_us">About us</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <a href="/articles/me_us">Dominus</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <a href="/articles/contact_us">Contact us</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <a href="/articles/blogger_information">Blogger Information</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+  <br/>
+  <br/>
+</body>
+</h3>
+
+
+<h1>All Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article_path(article) %>
+    </li>
+
+
+
+
+
+  <% end %>
+
+
+
+
+
+
+
+
+  
+</ul>
+
+	<p>
+<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+</p>
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+
+Copyright:- rakeshmaurya262@gmail.com</div>
+<br/>
+
+
+
+
+
+
+
